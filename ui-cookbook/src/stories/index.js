@@ -4,3 +4,4 @@ import './Grid';
 import './AppBar';
 import './Drawer';
 import './Tabs';
+import './ExpansionPanel';
