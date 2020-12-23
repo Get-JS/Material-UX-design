@@ -6,3 +6,4 @@ import './Drawer';
 import './Tabs';
 import './ExpansionPanel';
 import './List';
+import './Table';
