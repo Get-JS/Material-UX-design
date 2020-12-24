@@ -10,6 +10,7 @@ import {
   ScrollablePanelContent,
   LazyLoadingPanelContent,
   ControlledAccordions,
+  CustomizedAccordions,
 } from '../ExpansionPanel';
 
 storiesOf('Expansion Panels', module)
@@ -18,4 +19,5 @@ storiesOf('Expansion Panels', module)
   .add('Formatting Panel Headers', () => <FormattingPanelHeaders />)
   .add('Scrollable Panel Content', () => <ScrollablePanelContent />)
   .add('Lazy Loading Panel Content', () => <LazyLoadingPanelContent />)
-  .add('ControlledAccordions', () => <ControlledAccordions />);
+  .add('ControlledAccordions', () => <ControlledAccordions />)
+  .add('CustomizedAccordions', () => <CustomizedAccordions />);
