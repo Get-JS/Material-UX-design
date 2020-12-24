@@ -18,13 +18,13 @@ function TabAlignment() {
   const match = useMediaQuery(theme => theme.breakpoints.between('xs', 'sm'));
   const [value, setValue] = useState(0);
 
-  const onChange = (e, value) => {
+  const handleChange = (e, value) => {
     setValue(value);
   };
 
   return (
     <div className={classes.root}>
-      <Tabs value={value} onChange={onChange} variant={match ? null : 'fullWidth'} centered>
+      <Tabs value={value} onChange={handleChange} variant={match ? null : 'fullWidth'} centered>
         <Tab label="Item One" />
         <Tab label="Item Two" />
         <Tab label="Item Three" />

@@ -5,7 +5,15 @@ import { withKnobs } from '@storybook/addon-knobs';
 
 import withThemeProvider from './withThemeProvider';
 
-import { StatefulTables, SortableColumns, FilteringRows, SelectingRows, RowActions,Pagination } from '../Table';
+import {
+  StatefulTables,
+  SortableColumns,
+  FilteringRows,
+  SelectingRows,
+  RowActions,
+  Pagination,
+  PaginationCheckbox,
+} from '../Table';
 
 storiesOf('Table', module)
   .addDecorator(withKnobs)
@@ -15,4 +23,5 @@ storiesOf('Table', module)
   .add('Filtering Rows', () => <FilteringRows />)
   .add('Selecting Rows', () => <SelectingRows />)
   .add('Row Actions', () => <RowActions />)
-  .add('Pagination', () => <Pagination />);
+  .add('Pagination', () => <Pagination />)
+  .add('PaginationCheckbox', () => <PaginationCheckbox />);
