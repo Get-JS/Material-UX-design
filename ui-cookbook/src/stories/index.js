@@ -8,3 +8,4 @@ import './ExpansionPanel';
 import './List';
 import './Table';
 import './Card';
+import './Snackbar';
