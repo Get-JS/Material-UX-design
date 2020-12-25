@@ -76,3 +76,10 @@
   - [Card](https://material-ui.com/components/cards/)
   - [CardHeader](https://material-ui.com/api/card-header/)
   - [CardContent](https://material-ui.com/api/card-content/)
+
+- [Card](https://material-ui.com/components/cards/)
+  - [Card(Y)](https://www.youtube.com/watch?v=UNCq01LNNrg&list=PLQg6GaokU5CwiVmsZ0d_9Zsg_DnIP_xwr&index=12)
+  - [CardHeader](https://material-ui.com/api/card-header/)
+  - [CardMedia](https://material-ui.com/api/card-media/)
+  - [CardContent](https://material-ui.com/api/card-content/)
+  - [CardActions](https://material-ui.com/api/card-actions/)

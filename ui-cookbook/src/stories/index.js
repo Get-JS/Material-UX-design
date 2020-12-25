@@ -7,3 +7,4 @@ import './Tabs';
 import './ExpansionPanel';
 import './List';
 import './Table';
+import './Card';
