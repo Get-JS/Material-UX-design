@@ -11,3 +11,4 @@ import './Card';
 import './Snackbar';
 import './Button';
 import './TextField';
+import './Autocomplete';

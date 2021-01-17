@@ -76,8 +76,7 @@ const headCells = [
   { id: 'protein', numeric: true, disablePadding: false, label: 'Protein (g)' },
 ];
 
-function EnhancedTableHead(props) {
-  const { classes, onSelectAllClick, order, orderBy, numSelected, rowCount, onRequestSort } = props;
+function EnhancedTableHead({ classes, onSelectAllClick, order, orderBy, numSelected, rowCount, onRequestSort }) {
   const createSortHandler = property => event => {
     onRequestSort(event, property);
   };
@@ -149,7 +148,7 @@ const useToolbarStyles = makeStyles(theme => ({
   },
 }));
 
-function EnhancedTableToolbar (props) {
+function EnhancedTableToolbar(props) {
   const classes = useToolbarStyles();
   const { numSelected } = props;
 
@@ -184,7 +183,7 @@ function EnhancedTableToolbar (props) {
       )}
     </Toolbar>
   );
-};
+}
 
 EnhancedTableToolbar.propTypes = {
   numSelected: PropTypes.number.isRequired,

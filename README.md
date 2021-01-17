@@ -102,3 +102,9 @@
   - [InputAdornment](https://material-ui.com/api/input-adornment/)
   - [react-text-mask](https://github.com/text-mask/text-mask/tree/master/react/#readme)
   - [react-number-format](https://github.com/s-yadav/react-number-format#readme)
+
+- [Autocomplete](https://material-ui.com/components/autocomplete/)
+  - [react-select](https://react-select.com/)
+  - [autosuggest-highlight](https://github.com/moroshko/autosuggest-highlight#readme)
+  - [Chip-input](https://github.com/TeamWertarbyte/material-ui-chip-input#readme)
+  - [Chip](https://material-ui.com/components/chips/)

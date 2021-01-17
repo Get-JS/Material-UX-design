@@ -1,0 +1,222 @@
+import React, { useState } from 'react';
+import Select from 'react-select';
+
+import { makeStyles } from '@material-ui/styles';
+import Typography from '@material-ui/core/Typography';
+import TextField from '@material-ui/core/TextField';
+import Paper from '@material-ui/core/Paper';
+import MenuItem from '@material-ui/core/MenuItem';
+import IconButton from '@material-ui/core/IconButton';
+
+import CancelIcon from '@material-ui/icons/Cancel';
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+    height: 250,
+  },
+  input: {
+    display: 'flex',
+  },
+  placeholder: {
+    position: 'absolute',
+    left: 2,
+    fontSize: 16,
+  },
+  paper: {
+    position: 'absolute',
+    zIndex: 1,
+    marginTop: theme.spacing(1),
+    left: 0,
+    right: 0,
+  },
+  noOptionsMessage: {
+    padding: `${theme.spacing(1)}px ${theme.spacing(2)}px`,
+  },
+  valueContainer: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    flex: 1,
+    alignItems: 'center',
+    overflow: 'hidden',
+  },
+  singleValue: {
+    color: theme.palette.primary.main,
+    fontSize: 16,
+  },
+}));
+
+// 텍스트 입력 제어
+function Control(props) {
+  return (
+    <TextField
+      fullWidth
+      InputProps={{
+        inputComponent,
+        inputProps: {
+          className: props.selectProps.classes.input,
+          inputRef: props.innerRef,
+          children: props.children,
+          ...props.innerProps,
+        },
+      }}
+      {...props.selectProps.textFieldProps}
+    />
+  );
+}
+function inputComponent({ inputRef, ...props }) {
+  return <div ref={inputRef} {...props} />;
+}
+
+// 자리표시자 텍스트
+function Placeholder(props) {
+  return (
+    <Typography color="textSecondary" className={props.selectProps.classes.placeholder} {...props.innerProps}>
+      {props.children}
+    </Typography>
+  );
+}
+
+// 옵션 메뉴
+function Menu(props) {
+  return (
+    <Paper square className={props.selectProps.classes.paper} {...props.innerProps}>
+      {props.children}
+    </Paper>
+  );
+}
+
+// 개별 옵션
+function Option(props) {
+  return (
+    <MenuItem
+      buttonRef={props.innerRef}
+      selected={props.isFocused}
+      component="div"
+      style={{
+        fontWeight: props.isSelected ? 500 : 400,
+      }}
+      {...props.innerProps}
+    >
+      {props.children}
+    </MenuItem>
+  );
+}
+
+// 가능한 옵션이 없음
+function NoOptionsMessage(props) {
+  return (
+    <Typography color="textSecondary" className={props.selectProps.classes.noOptionsMessage} {...props.innerProps}>
+      {props.children}
+    </Typography>
+  );
+}
+
+// SingleValue 구성 요소를 래핑
+function ValueContainer(props) {
+  return <div className={props.selectProps.classes.valueContainer}>{props.children}</div>;
+}
+
+// 자동 완성 입력 내의 메뉴에서 선택한 값을 렌더링
+function SingleValue(props) { 
+  return (
+    <Typography className={props.selectProps.classes.singleValue} {...props.innerProps}>
+      {props.children}
+    </Typography>
+  );
+}
+
+// Select 구성요소는 default로 파이프 문자를 자동 완성 메뉴 오른쪽에 있는 버튼의 구분자로 사용한다.
+// 머티리얼 UI 버튼 구성요소로 대체될 것이므로 구분자는 더이상 필요하지 않다.
+const IndicatorSeparator = () => null;
+
+// 취소 옵션 표시
+function ClearIndicator(props) {
+  return (
+    <IconButton {...props.innerProps}>
+      <CancelIcon />
+    </IconButton>
+  );
+}
+
+// 메뉴 표시자 표시
+function DropdownIndicator(props) {
+  return (
+    <IconButton {...props.innerProps}>
+      <ArrowDropDownIcon />
+    </IconButton>
+  );
+}
+
+function Autocomplete(props) {
+  const classes = useStyles();
+  const [value, setValue] = useState(null);
+
+  return (
+    <div className={classes.root}>
+      <Select
+        value={value}
+        onChange={v => setValue(v)}
+        textFieldProps={{
+          label: 'Team',
+          InputLabelProps: {
+            shrink: true,
+          },
+        }}
+        {...{ ...props, classes }}
+      />
+    </div>
+  );
+}
+
+Autocomplete.defaultProps = {
+  isClearable: true,
+  components: {
+    Control,
+    Menu,
+    NoOptionsMessage,
+    Option,
+    Placeholder,
+    SingleValue,
+    ValueContainer,
+    IndicatorSeparator,
+    ClearIndicator,
+    DropdownIndicator,
+  },
+  options: [
+    { label: 'Boston Bruins', value: 'BOS' },
+    { label: 'Buffalo Sabres', value: 'BUF' },
+    { label: 'Detroit Red Wings', value: 'DET' },
+    { label: 'Florida Panthers', value: 'FLA' },
+    { label: 'Montreal Canadiens', value: 'MTL' },
+    { label: 'Ottawa Senators', value: 'OTT' },
+    { label: 'Tampa Bay Lightning', value: 'TBL' },
+    { label: 'Toronto Maple Leafs', value: 'TOR' },
+    { label: 'Carolina Hurricanes', value: 'CAR' },
+    { label: 'Columbus Blue Jackets', value: 'CBJ' },
+    { label: 'New Jersey Devils', value: 'NJD' },
+    { label: 'New York Islanders', value: 'NYI' },
+    { label: 'New York Rangers', value: 'NYR' },
+    { label: 'Philadelphia Flyers', value: 'PHI' },
+    { label: 'Pittsburgh Penguins', value: 'PIT' },
+    { label: 'Washington Capitals', value: 'WSH' },
+    { label: 'Chicago Blackhawks', value: 'CHI' },
+    { label: 'Colorado Avalanche', value: 'COL' },
+    { label: 'Dallas Stars', value: 'DAL' },
+    { label: 'Minnesota Wild', value: 'MIN' },
+    { label: 'Nashville Predators', value: 'NSH' },
+    { label: 'St. Louis Blues', value: 'STL' },
+    { label: 'Winnipeg Jets', value: 'WPG' },
+    { label: 'Anaheim Ducks', value: 'ANA' },
+    { label: 'Arizona Coyotes', value: 'ARI' },
+    { label: 'Calgary Flames', value: 'CGY' },
+    { label: 'Edmonton Oilers', value: 'EDM' },
+    { label: 'Los Angeles Kings', value: 'LAK' },
+    { label: 'San Jose Sharks', value: 'SJS' },
+    { label: 'Vancouver Canucks', value: 'VAN' },
+    { label: 'Vegas Golden Knights', value: 'VGK' },
+  ],
+};
+
+export default Autocomplete;
