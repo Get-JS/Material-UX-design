@@ -13,3 +13,4 @@ import './Button';
 import './TextField';
 import './Autocomplete';
 import './Selection';
+import './Pickers';
