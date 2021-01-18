@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import clsx from 'clsx';
-import AsyncSelect from 'react-select/lib/Async';
+import AsyncSelect from 'react-select/async';
 import match from 'autosuggest-highlight/match';
 import parse from 'autosuggest-highlight/parse';
 
