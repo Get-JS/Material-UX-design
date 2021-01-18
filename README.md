@@ -102,9 +102,23 @@
   - [InputAdornment](https://material-ui.com/api/input-adornment/)
   - [react-text-mask](https://github.com/text-mask/text-mask/tree/master/react/#readme)
   - [react-number-format](https://github.com/s-yadav/react-number-format#readme)
+  - [focus-ploblem](https://github.com/mui-org/material-ui/issues/11244)
 
 - [Autocomplete](https://material-ui.com/components/autocomplete/)
   - [react-select](https://react-select.com/)
   - [autosuggest-highlight](https://github.com/moroshko/autosuggest-highlight#readme)
   - [Chip-input](https://github.com/TeamWertarbyte/material-ui-chip-input#readme)
   - [Chip](https://material-ui.com/components/chips/)
+
+- [Selection]()
+  - [FormControl](https://material-ui.com/api/form-control/)
+  - [FormControlLabel](https://material-ui.com/api/form-control-label/)
+  - [FormLabel](https://material-ui.com/api/form-label/)
+  - [FormGroup](https://material-ui.com/api/form-group/)
+  - [RadioGroup](https://material-ui.com/api/radio-group/)
+  - [Radio](https://material-ui.com/components/radio-buttons/)
+  - [Checkbox](https://material-ui.com/components/checkboxes/)
+  - [Select](https://material-ui.com/components/selects/)
+  - [Switch](https://material-ui.com/components/switches/)
+  - [Chip](https://material-ui.com/components/chips/)
+
