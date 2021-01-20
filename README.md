@@ -85,7 +85,7 @@
   - [CardActions](https://material-ui.com/api/card-actions/)
 
 - [Snackbar](https://material-ui.com/components/snackbars/)
-  - [Snackbar-redux(Y)]()
+  - [Snackbar-redux(Y)](https://www.youtube.com/watch?v=CVnSrLZ_HaQ&list=PLQg6GaokU5CwiVmsZ0d_9Zsg_DnIP_xwr&index=24)
   - [Error Boundaries](https://ko.reactjs.org/docs/error-boundaries.html)
   - [Slide](https://material-ui.com/api/slide/)
   - [Grow](https://material-ui.com/api/grow/)
