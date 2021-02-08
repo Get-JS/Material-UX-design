@@ -14,3 +14,4 @@ import './TextField';
 import './Autocomplete';
 import './Selection';
 import './Pickers';
+import './Dialog';

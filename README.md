@@ -123,3 +123,10 @@
   - [Chip](https://material-ui.com/components/chips/)
 
 - [Pickers](https://material-ui.com/components/pickers/#material-ui-pickers)
+
+- [Dialog](https://material-ui.com/components/dialogs/)
+  - [Dialog](https://material-ui.com/api/dialog/)
+  - [DialogTitle](https://material-ui.com/api/dialog-title/)
+  - [DialogContent](https://material-ui.com/api/dialog-content/)
+  - [DialogContentText](https://material-ui.com/api/dialog-content-text/)
+  - [DialogActions](https://material-ui.com/api/dialog-actions/)
