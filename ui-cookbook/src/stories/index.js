@@ -18,3 +18,4 @@ import './Dialog';
 import './Menu';
 import './Typography';
 import './Icon';
+import './Theme';

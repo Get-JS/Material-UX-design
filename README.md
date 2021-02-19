@@ -140,3 +140,7 @@
 
 - [Icon](https://material-ui.com/components/icons/#icons)
   - [Material Icons](https://material-ui.com/components/material-icons/)
+
+- [Theme](https://material-ui.com/customization/default-theme/)
+  - [theming](https://material-ui.com/customization/theming/)
+  - [override](https://material-ui.com/customization/components/)
