@@ -19,3 +19,4 @@ import './Menu';
 import './Typography';
 import './Icon';
 import './Theme';
+import './Style';
