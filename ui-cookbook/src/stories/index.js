@@ -15,3 +15,4 @@ import './Autocomplete';
 import './Selection';
 import './Pickers';
 import './Dialog';
+import './Menu';

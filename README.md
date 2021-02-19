@@ -130,3 +130,7 @@
   - [DialogContent](https://material-ui.com/api/dialog-content/)
   - [DialogContentText](https://material-ui.com/api/dialog-content-text/)
   - [DialogActions](https://material-ui.com/api/dialog-actions/)
+
+- [Menu](https://material-ui.com/components/menus/#menus)
+  - [Menu](https://material-ui.com/api/menu/)
+  - [MenuItem](https://material-ui.com/api/menu-item/)

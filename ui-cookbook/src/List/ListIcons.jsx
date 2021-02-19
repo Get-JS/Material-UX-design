@@ -10,7 +10,7 @@ import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
 
 const MaybeSelectedIcon = ({ selected, Icon }) => (selected ? <CheckCircleOutlineIcon /> : <Icon />);
 
-export default function ListIcons() {
+function ListIcons() {
   const [items, setItems] = useState([{ name: 'First User' }, { name: 'Second User' }, { name: 'Third User' }]);
 
   const handleClick = index => () => {
@@ -34,3 +34,4 @@ export default function ListIcons() {
     </List>
   );
 }
+export default ListIcons;
