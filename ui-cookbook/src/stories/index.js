@@ -16,3 +16,4 @@ import './Selection';
 import './Pickers';
 import './Dialog';
 import './Menu';
+import './Typography';

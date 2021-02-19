@@ -134,3 +134,6 @@
 - [Menu](https://material-ui.com/components/menus/#menus)
   - [Menu](https://material-ui.com/api/menu/)
   - [MenuItem](https://material-ui.com/api/menu-item/)
+
+- [Typography](https://material-ui.com/components/typography/)
+  - [Typography](https://material-ui.com/api/typography/)
