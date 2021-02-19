@@ -17,3 +17,4 @@ import './Pickers';
 import './Dialog';
 import './Menu';
 import './Typography';
+import './Icon';

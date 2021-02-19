@@ -137,3 +137,6 @@
 
 - [Typography](https://material-ui.com/components/typography/)
   - [Typography](https://material-ui.com/api/typography/)
+
+- [Icon](https://material-ui.com/components/icons/#icons)
+  - [Material Icons](https://material-ui.com/components/material-icons/)
